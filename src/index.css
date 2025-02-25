@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.imageView {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+  span {
+    width: 150px;
+    text-align: center;
+  }
+
+  img {
+    width: 150px;
+  }
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 500px;
+  height: 500px;
+  border: 4px solid black;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.grid-item {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+  background-size: calc(100% - 2px);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.grid-item.empty {
+  background-color: #fff;
+  cursor: default;
+  position: absolute;
+  z-index: -1;
+}
+
+.game-over {
+  position: fixed;
+  width: 600px;
+  height: 150px;
+  top: calc(50% - 75px);
+  background-color: white;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.621);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  button {
+    width: 150px;
+    height: 50px;
+  }
+}
+
+.grid-wrapper {
+  margin-top: 200px;
+}

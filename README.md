@@ -1,1 +1,3 @@
-# puzzle_game_1
+Down below
+
+![Infographic](./public/graphic.png)
